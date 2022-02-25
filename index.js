@@ -5,9 +5,9 @@ const app = express()
 const cors = require('cors')
 const Sequelize = require('sequelize');
 
-const connection = new Sequelize("mydb","sgroot","4U$uY9DjE79n1rQH", {
+const connection = new Sequelize("","","", {
     dialect: "mysql",
-    host: "SG-mydb-5759-mysql-master.servers.mongodirector.com",
+    host: "",
 });
 
 const Table = connection.define('task', {
